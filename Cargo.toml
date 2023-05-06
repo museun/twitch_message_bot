@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "crates/twitch_message_bot",
+    "crates/twitch_message_dispatcher",
+    "crates/twitch_message_user_defined",
+]
+
+[patch.crates-io]
+# twitch_message = { rev = "e13e3b1d8df2f35a743fe138026ce22d7c09a081", git = "https://github.com/museun/twitch_message" }
+twitch_message = { path = "c:/dev/rs/twitch_message" }

@@ -1,0 +1,18 @@
+[package]
+name = "twitch_message_user_defined"
+version = "0.1.0"
+edition = "2021"
+license = "0BSD"
+
+[dependencies]
+twitch_message_dispatcher = { version = "0.1.0", path = "../twitch_message_dispatcher" }
+twitch_message_bot        = { version = "0.1.0", path = "../twitch_message_bot" }
+
+serde = { version = "1.0.160", features = ["derive"], optional = true }
+tokio = { version = "1.27.0", features = ["sync"] }
+
+[features]
+serde = ["dep:serde"]
+
+[dev-dependencies]
+serde_yaml = "0.9.21"
